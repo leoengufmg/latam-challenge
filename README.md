@@ -77,6 +77,7 @@ Returns:
 
 ## Solucion Flowchart 
 
+```mermaid
 flowchart TD
     A[Inicio del Script] --> B[Leer Configuración desde config.yaml]
     B --> C[Montar Google Drive]
