@@ -1,0 +1,5 @@
+d85a0cc - lr_andrade, 11 minutes ago : Merge tag 'fix-issue-functions' into develop
+a897001 - lr_andrade, 11 minutes ago : Merge branch 'hotfix/fix-issue-functions'
+0286a7c - lr_andrade, 2 hours ago : changing functions and pipeline with hotfix
+ed448f1 - lr_andrade, 2 hours ago : added missing libraries
+c88991d - lr_andrade, 10 hours ago : Merge tag '1.0.0' into develop

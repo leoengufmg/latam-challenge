@@ -94,3 +94,9 @@ flowchart TD
     M --> N[Cargar Datos desde GCS a BigQuery]
     N --> O[Ejecutar Consultas en BigQuery]
     O --> P[Registrar Resultados y Finalizar]
+```
+
+## Resultados
+created dataset: https://console.cloud.google.com/storage/browser/gcp_latam_twitter;tab=objects?forceOnBucketsSortingFiltering=true&hl=es-419&inv=1&invt=Abhjuw&project=latam-challenge-leonardora&prefix=&forceOnObjectsSortingFiltering=false
+
+Bigquery: https://console.cloud.google.com/bigquery?referrer=search&hl=es-419&inv=1&invt=Abhjuw&project=latam-challenge-leonardora&ws=!1m4!1m3!3m2!1slatam-challenge-leonardora!2slatam_tweets_dataset
