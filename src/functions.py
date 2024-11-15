@@ -1,29 +1,23 @@
-import sys
+import io
+import importlib.util
 import logging
 import os
-import time
-import io
-
-import importlib.util
+import sys
 import subprocess
 import sys
+import time
+from typing import Any
 
-from google.cloud import storage
+
 from google.api_core.exceptions import Conflict
-
-
-import io
-import logging
+from google.api_core.exceptions import NotFound
+from google.cloud import storage
+from google.cloud import bigquery
 from google.colab import auth
 from google.colab import drive
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
-from google.cloud import storage  # For Google Cloud Storage access
-from typing import Any
 
-import logging
-from google.cloud import bigquery
-from google.api_core.exceptions import NotFound
 
 ## Requirements
 def install_requirements(requirements_path: str = "./requirements.txt") -> bool:
