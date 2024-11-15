@@ -73,3 +73,23 @@ Returns:
 ## Sugerencias
 * Para medir la memoria en uso te recomendamos [memory-profiler](https://pypi.org/project/memory-profiler/) o [memray](https://github.com/bloomberg/memray)
 * Para medir el tiempo de ejecución te recomendamos [py-spy](https://github.com/benfred/py-spy) o [Python Profilers](https://docs.python.org/3/library/profile.html)
+
+
+## Solucion Flowchart 
+
+flowchart TD
+    A[Inicio del Script] --> B[Leer Configuración desde config.yaml]
+    B --> C[Montar Google Drive]
+    C --> D[Autenticar en Google Cloud]
+    D --> E[Crear Bucket en Google Cloud Storage]
+    E --> F[Descargar Archivo desde Google Drive]
+    F --> G{¿Archivo no está vacío?}
+    G -- Sí --> H[Subir Archivo a GCS]
+    G -- No --> I[Registrar Advertencia y Omitir Subida]
+    H --> J[Extraer Archivo ZIP si es necesario]
+    J --> K[Autenticar en BigQuery]
+    K --> L[Crear Dataset en BigQuery]
+    L --> M[Crear Tabla en BigQuery]
+    M --> N[Cargar Datos desde GCS a BigQuery]
+    N --> O[Ejecutar Consultas en BigQuery]
+    O --> P[Registrar Resultados y Finalizar]
