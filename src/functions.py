@@ -6,7 +6,7 @@ import sys
 import subprocess
 import sys
 import time
-from typing import Any
+from typing import List, Tuple, Any
 
 
 from google.api_core.exceptions import Conflict
