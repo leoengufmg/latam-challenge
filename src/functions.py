@@ -214,7 +214,7 @@ def load_data_from_storage(client: bigquery.Client, source_uri: str, dataset_nam
         raise
 
 
-def process_bigquery_results(client: bigquery.Client, query: str) -> List[Tuple[Any, Any]]:
+def launch_bigquery(client: bigquery.Client, query: str) -> List[Tuple[Any, Any]]:
     data_extracted : List[Tuple[Any, Any]] = []
 
     try:
