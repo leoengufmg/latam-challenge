@@ -6,7 +6,6 @@ title: GCP Google Cloud Platform - Terraform Commands
 2. Install Terraform CLI
 3. Install VSCode Editor
 4. Install Terraform Pluging for VSCode
-5. Implement above 4 steps in both MacOS and WindowsOS
  
 
 ## Step-02: WindowsOS: Install gcloud cli and verify
