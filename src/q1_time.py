@@ -1,5 +1,9 @@
+import datetime
 from typing import List, Tuple
-from datetime import datetime
+from google.cloud import bigquery
+import line_profiler
 
-def q1_time(file_path: str) -> List[Tuple[datetime.date, str]]:
-    pass
+
+@line_profiler.profile
+def q1_time(client: bigquery.Client, query: str) -> List[Tuple[datetime.date, str]]:
+  return launch_bigquery(client, query)
