@@ -1,6 +1,7 @@
 from typing import List, Tuple
 from google.cloud import bigquery
 import line_profiler
+from functions import launch_bigquery
 
 
 @line_profiler.profile
