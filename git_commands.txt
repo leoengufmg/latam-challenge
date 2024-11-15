@@ -10,4 +10,4 @@ git flow feature start feature IaC
 git flow feature finish IaC
 git push origin develop
 
-git flow feature start feature requirements
+git flow feature start requirements
