@@ -1,0 +1,13 @@
+
+git add .
+git commit --amend --no-edit
+git push origin <branch> --force
+
+
+git flow init
+
+git flow feature start feature IaC
+git flow feature finish IaC
+git push origin develop
+
+git flow feature start feature requirements
