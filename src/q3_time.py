@@ -1,4 +1,8 @@
 from typing import List, Tuple
+from google.cloud import bigquery
+import line_profiler
 
-def q3_time(file_path: str) -> List[Tuple[str, int]]:
-    pass
+
+@line_profiler.profile
+def q3_time(client: bigquery.Client, query: str) -> List[Tuple[str, int]]:
+    return launch_bigquery(client, query)
